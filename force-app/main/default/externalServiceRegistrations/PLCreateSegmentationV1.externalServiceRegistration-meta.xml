@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>PLCreateSegmentationV1</label>
+    <namedCredential>Pardot_Integration_NC</namedCredential>
+    <operations>
+        <active>true</active>
+        <name>createsegmentation</name>
+    </operations>
+    <schema>{
+  &quot;swagger&quot;: &quot;2.0&quot;,
+  &quot;basePath&quot;: &quot;/api/list/version/4/do/&quot;,
+  &quot;host&quot;: &quot;pi.demo.pardot.com&quot;,
+  &quot;info&quot;: {
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;title&quot;: &quot;Pardot API Wrapper&quot;,
+    &quot;description&quot;: &quot;Pardot API Wrapper&quot;
+  },
+  &quot;schemes&quot;: [
+    &quot;https&quot;
+  ],
+  &quot;produces&quot;: [
+    &quot;application/json&quot;
+  ],
+  &quot;paths&quot;: {
+    &quot;/create&quot;: {
+      &quot;post&quot;: {
+        &quot;operationId&quot;: &quot;CreateSegmentation&quot;,
+        &quot;summary&quot;: &quot;Create a new Segmentation&quot;,
+        &quot;description&quot;: &quot;Create a new Segmentation&quot;,
+        &quot;consumes&quot;: [
+          &quot;application/x-www-form-urlencoded&quot;
+        ],
+        &quot;produces&quot;: [
+          &quot;text/plain&quot;
+        ],
+        &quot;parameters&quot;: [
+          {
+          &quot;in&quot;: &quot;query&quot;,
+          &quot;name&quot;: &quot;format&quot;,
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;format type&quot;,
+          &quot;default&quot;: &quot;json&quot;
+          },
+          {
+            &quot;in&quot;: &quot;header&quot;,
+            &quot;name&quot;: &quot;Pardot-Business-Unit-Id&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;Pardot-Business-Unit-Id&quot;
+          },
+          {
+            &quot;description&quot;: &quot;name field&quot;,
+            &quot;name&quot;: &quot;name&quot;,
+            &quot;in&quot;: &quot;formData&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+          },
+          {
+            &quot;description&quot;: &quot;title field&quot;,
+            &quot;name&quot;: &quot;title&quot;,
+            &quot;in&quot;: &quot;formData&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+          },
+          {
+            &quot;description&quot;: &quot;description feild&quot;,
+            &quot;name&quot;: &quot;description&quot;,
+            &quot;in&quot;: &quot;formData&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+          }
+        ],
+        &quot;responses&quot;: {
+ &quot;200&quot;: {
+            &quot;description&quot;: &quot;200&quot;,
+            &quot;schema&quot;: {
+               &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        }
+      }
+    }
+  },
+  &quot;definitions&quot;: {
+    &quot;CreateSegmentationResult&quot;: {
+    &quot;properties&quot;: {
+          &quot;values&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        }
+    }
+  }
+}
+</schema>
+    <schemaType>OpenApi</schemaType>
+    <status>Complete</status>
+</ExternalServiceRegistration>

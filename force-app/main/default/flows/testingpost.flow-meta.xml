@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>aaaaaa</name>
+        <label>aaa</label>
+        <locationX>308</locationX>
+        <locationY>279</locationY>
+        <actionName>1XO5e000000CatLNotFound</actionName>
+        <actionType xsi:nil="true"/>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>description</name>
+            <value>
+                <stringValue>aaa</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>name</name>
+            <value>
+                <stringValue>aaa</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>aaa</stringValue>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <interviewLabel>testing {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>testingpost</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>aaaaaa</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+</Flow>

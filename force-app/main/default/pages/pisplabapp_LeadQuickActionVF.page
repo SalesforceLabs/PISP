@@ -1,0 +1,11 @@
+<apex:page standardController="Lead"
+    recordSetVar="Leads"
+    extensions="pisplabapp_LeadsActionController"
+    showHeader="false"
+    id="muopp"
+>
+<flow:interview name="pisplabapp.PardotQuickActionFlowTemplateV1" buttonStyle="color:#050; background-color:#fed; border:1px solid;" finishLocation="{!URLFOR('/lightning/o/Lead/list')}">
+        Total Lead records: {!leadRecordsSize}
+        <apex:param name="LeadIdList" value="{!leadIds}"/>
+    </flow:interview>
+</apex:page>
